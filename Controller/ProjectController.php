@@ -10,7 +10,6 @@ class ProjectController extends MainController {
 
     public function createProject()
     {
-var_dump($_SESSION);
         $project = new ProjectManager();
         if ($_SESSION['status'] === 'ADMIN') {
             if (isset($_POST['name'])) {
